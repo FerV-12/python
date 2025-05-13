@@ -38,7 +38,7 @@ def showProfile4(username):
 def showContacts(username,email):
     myhobbies={'diving','playing','Sitting','Eating','Hays'}
     userdata={
-      'firstname':'ferjhon pogi pag eto nag display ibig sabihin gumana na siya HAHAHAH Di na gumana',
+      'firstname':'ferjhon bente uno',
       'lastname':'lopena',
       'age':21,
       'email':email,
