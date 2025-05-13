@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Page</title>
+</head>
+<body>
+    <h1>Hello there client, hope you shop with us!</h1>
+    <hr/>
+    <h3>Username: {{ theusername }}</h3>
+    <h3>Age: {{ theage }}</h3>
+    <h3>Password: {{ thepass }}</h3>
+    {% if thepicture %}
+    <h3>Uploaded Picture:</h3>
+    <img src="/{{ thepicture }}" alt="Uploaded Picture" style="max-width: 300px;">
+    {% endif %}
+
+    <p>SIGNATURE: INF225_FORM_HANDLING_Lopena_Ferjhon_HrtnyYuiFgH225</p>
+</body>
+</html>

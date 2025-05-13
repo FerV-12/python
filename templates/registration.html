@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Here</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <hr/>
+  <form action="/register2/form" method="POST" enctype="multipart/form-data">     
+    <p>USERNAME:</p>
+    <input type="text" name="username"/>
+
+    <p>Age:</p>
+    <input type="number" name="age"/>
+
+    <p>Password</p>
+    <input type="password" name="password" id="password"/>
+    <input type="checkbox" id="showPassword" onclick="togglePassword('password')"> Show Password
+  
+    <p>Re - Type password</p>
+    <input type="password" name="repass" id="repass"/>
+    <input type="checkbox" id="showRepass" onclick="togglePassword('repass')"> Show Password
+
+    <p>User Type</p>
+    <input type="text" name="typeuser"/>
+
+    <p>Upload Picture:</p>
+    <input type="file" name="picture" accept="image/*"/>
+
+    <input type="submit" value="Register Now"/>
+    <button type="reset">Clear</button>
+    <p>SIGNATURE: INF225_FORM_HANDLING_Lopena_Ferjhon_HrtnyYuiFgH225</p>
+  </form>
+
+  <script>
+    function togglePassword(fieldId) {
+      const field = document.getElementById(fieldId);
+      if (field.type === "password") {
+        field.type = "text";
+      } else {
+        field.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>
